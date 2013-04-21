@@ -1,4 +1,4 @@
-define(["knockout", "text!./tpl/index.html"], function(ko, template) {
+define(["knockout", "text!./../tpl/index.html"], function(ko, template) {
 	return function(model){
 		var self = this;
 
