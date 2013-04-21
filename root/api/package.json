@@ -1,0 +1,19 @@
+{
+  "name": "test",
+  "description": "test",
+  "version": "0.0.1",
+  "author": "Andrew <luzkovskyandrey@gmail.com>",
+  "private": true,
+  "scripts": {
+    "start": "node server"
+  },
+
+  "dependencies": {
+    "express": "3.0.x",
+    "mongoose": "3.5.x"
+  },
+
+  "devDependencies": {
+  }
+
+}
