@@ -33,6 +33,19 @@ exports.template = function(grunt, init, done) {
     // Generate package.json file.
     init.writePackageJSON('api/package.json', props);
 
+
+
+    init.writePackageJSON('tools/package.json', {
+      "name": "tools",
+      "version": "0.0.1",
+      "dependencies": {
+        "colors": "*",
+        "read": "*",
+        "grunt": "~0.4.0",
+        "grunt-env": "*"
+      }
+    });
+
     // All done!
     done();
   });
