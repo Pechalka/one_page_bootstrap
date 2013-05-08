@@ -1,0 +1,1 @@
+define(["knockout","text!./topMenu.html","vent"],function(e,t,n){return function(r){var i=this;i.items=e.observableArray(r),i.selected=e.observable(r[0]),n.on("app:render",function(e,t){t==="overview"||t==="students"?i.selected(t):i.selected("")}),i.html=t}})

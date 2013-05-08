@@ -1,0 +1,1 @@
+define(["knockout","text!./changeProfile.html"],function(e,t){return function(e){var n=this;n.html=t}})

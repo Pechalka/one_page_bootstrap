@@ -1,0 +1,1 @@
+define(["knockout","text!./add.html"],function(e,t){return function(e,n){var r=this;r.save_student=function(){n.trigger("save_student"),$.colorbox.close()},r.html=t}})

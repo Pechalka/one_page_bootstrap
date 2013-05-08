@@ -1,0 +1,9 @@
+----------------
+<ul data-bind="foreach : breadcrumbs">
+	<!-- ko ifnot: $index() === $parent.breadcrumbs().length - 1  -->
+	<li><a href="#" data-bind="text : $data, attr : { href : '#/' + $data }"></a></li>
+	<!-- /ko -->
+	<!-- ko if: $index() === $parent.breadcrumbs().length - 1  -->
+	<li data-bind="text : $data"></li>
+	<!-- /ko -->
+</ul>

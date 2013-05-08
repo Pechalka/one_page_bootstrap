@@ -1,0 +1,5 @@
+<ul data-bind="foreach : items">
+	<li data-bind="css : { 'active' : $parent.selected() == $data }">
+		<a href="#" data-bind="attr : { href : '#/' + $data }, text : $data"></a>
+	</li>
+</ul>	

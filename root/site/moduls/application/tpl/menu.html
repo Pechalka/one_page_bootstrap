@@ -1,0 +1,9 @@
+<div class="navbar">
+  <div class="navbar-inner">
+	<ul class="nav" data-bind="foreach : items">
+	  <li data-bind="css : { active : $parent.select() == $data }">
+	  	<a href="#" data-bind="text : $data, attr : { href : '#/' + $data }"></a>
+	  </li>
+	 </ul>
+   </div>
+</div>

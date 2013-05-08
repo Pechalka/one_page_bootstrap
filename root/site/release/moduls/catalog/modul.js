@@ -1,0 +1,1 @@
+define("text!moduls/catalog/general.html",[],function(){return"catalog"}),define("moduls/catalog/general",["knockout","text!./general.html","vent"],function(e,t,n){return function(){var e=this;e.html=t}}),define("catalog",["moduls/catalog/general","app","vent"],function(e,t,n){return{showGeneral:function(){t.content(new e)}}})

@@ -1,0 +1,1 @@
+define("text!moduls/overview/index.html",[],function(){return'\r\nhellow <span data-bind="text : name"></span>'}),define("moduls/overview/index",["knockout","text!./index.html"],function(e,t){return function(n){var r=this;r.name=e.observable(n),r.html=t}}),define("overview",["moduls/overview/index","app"],function(e,t){return{showIndex:function(){t.content(new e("vasa"))}}})

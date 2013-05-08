@@ -1,0 +1,1 @@
+define(["knockout","text!./index.html","vent"],function(e,t,n){return function(){var e=this;e.show_add=function(){n.trigger("show_add")},e.update=function(){alert("update")},e.html=t}})

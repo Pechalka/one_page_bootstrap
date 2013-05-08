@@ -26,11 +26,12 @@ exports.template = function(grunt, init, done) {
     };
 
     var files = init.filesToCopy(props);
-    // Actually copy (and process) files.
-    init.copyAndProcess(files, props);
 
+    // Actually copy (and process) files.    
+    init.copyAndProcess(files, props, { noProcess: ['*.ai', '*.jpg'] });
+ 
     // Generate package.json file.
-    init.writePackageJSON('package.json', props);
+    init.writePackageJSON('api/package.json', props);
 
     // All done!
     done();
